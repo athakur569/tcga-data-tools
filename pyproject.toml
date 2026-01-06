@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcga-data-tools"
+version = "0.1.0"
+description = "GDC API utilities, TSS extraction, and patient-level grouping for TCGA data"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Abhishek Thakur", email = "a.thakur5690@gmail.com"}]
+requires-python = ">=3.9"
+keywords = ["TCGA", "GDC", "computational-pathology", "digital-pathology", "bioinformatics"]
+dependencies = [
+    "requests>=2.31.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.65.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
